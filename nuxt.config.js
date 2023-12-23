@@ -1,7 +1,10 @@
+import plugins from './config/plugins';
+import build from './config/build';
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'learn-nuxt',
+    title: 'vuelidate',
     htmlAttrs: {
       lang: 'en'
     },
@@ -15,14 +18,14 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  ssr: false,
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
-
+  build,
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
+  plugins,
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -37,7 +40,7 @@ export default {
   modules: [
   ],
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  }
+  server: {
+    port: 8080,
+  },
 }
