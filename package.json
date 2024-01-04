@@ -6,7 +6,12 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "prepare-husky": "husky install .config/husky"
+  },
+  "husky": {
+    "hooks": {
+    }
   },
   "dependencies": {
     "@emotion/css": "^11.9.0",
@@ -19,6 +24,7 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^5.3.3",
+    "husky": "^8.0.3",
     "postcss": "^8.4.17",
     "vuelidate": "0.7.7"
   }
